@@ -36,15 +36,18 @@ const App = () => {
     }
   };
   return (
-    <div className="container">
-      <Banner />
+    <div>
+      <div className="container">
+        <Banner />
+      </div>
 
       {/* <input id="image" type="text" placeholder="image url" />
       <input id="name" type="text" placeholder="product name" />
       <input id="price" type="number" placeholder="price" />
       <button onClick={addProduct}>Add Product</button> */}
-
-      {product && product.map((e, i) => <Product key={i} item={e} />)}
+      <div className="products">
+        {product && product.map((e, i) => <Product key={i} item={e} />)}
+      </div>
     </div>
   );
 };

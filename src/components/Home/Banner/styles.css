@@ -50,6 +50,7 @@ header {
     font-size: 0.8rem;
   }
   .content-main button {
+    margin-top: 10px;
     font-size: 0.8rem;
     width: 150px;
     padding: 0.5rem 1rem;

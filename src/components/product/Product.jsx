@@ -3,13 +3,15 @@ import "./styles.css";
 
 export default function Product({ item }) {
   return (
-    <main>
-      <img className="image" src={item.image} alt={item.name} width="400" />
-      <div className="details">
-        <h1 className="name">{item.name}</h1>
-        <p className="price">Rs {item.price}</p>
-        <button className="btn">Add ToCart</button>
+    <div className="item">
+      <img className="image" src={item.image} alt={item.name} />
+      <div className="item-head">
+        <p className="item-name">{item.name}</p>
       </div>
-    </main>
+      <div className="item-foot">
+        <span className="item-price">Rs {item.price}</span>
+        <button>Add +</button>
+      </div>
+    </div>
   );
 }

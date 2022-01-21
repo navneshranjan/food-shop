@@ -13,7 +13,7 @@ const Banner = () => {
           <button>View menu</button>
         </div>
       </div>
-      <img src="./download.png" className="header-img" alt="banner " />
+      <img src="./banner-pic.png" className="header-img" alt="banner " />
     </header>
   );
 };
